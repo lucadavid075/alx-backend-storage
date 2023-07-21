@@ -10,7 +10,8 @@ from typing import Any, Callable, Union
 
 def count_calls(method: Callable) -> Callable:
     """
-    Tracks the number of calls made to a method in a Cache class and returns as a key.
+    Tracks the number of calls made to a method
+    in a Cache class and returns as a key.
     """
     @wraps(method)
     def invoker(self, *args, **kwargs) -> Any:

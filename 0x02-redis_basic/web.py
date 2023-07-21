@@ -37,7 +37,7 @@ def data_cacher(method: Callable) -> Callable:
 @data_cacher
 def get_page(url: str) -> str:
     """
-    Function that uses the requests module to obtain the 
+    Function that uses the requests module to obtain the
     HTML content of a particular URL and returns it
     """
     return requests.get(url).text
